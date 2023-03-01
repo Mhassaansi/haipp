@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/x80dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="@dimen/x80dp"-->
+    <!--    android:background="@drawable/bottom_navigation_background" />-->
+
+
+    <!--<LinearLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="@dimen/x80dp"-->
+    <!--    android:layout_alignParentBottom="true"-->
+    <!--    android:gravity="bottom">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imgTryout"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:onClick="tryoutClicked"-->
+    <!--            android:padding="@dimen/x10dp"-->
+    <!--            android:src="@drawable/img_footer_tryout" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imgSetting"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:onClick="SettingClicked"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:padding="@dimen/x10dp"-->
+    <!--            android:src="@drawable/img_footer_settings" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--    android:id="@+id/imgHome"-->
+    <!--    android:layout_width="@dimen/x70dp"-->
+    <!--    android:layout_height="@dimen/x70dp"-->
+    <!--    android:layout_alignParentBottom="true"-->
+    <!--    android:layout_centerInParent="true"-->
+    <!--    android:onClick="homeClicked"-->
+    <!--    android:padding="@dimen/x10dp"-->
+    <!--    android:src="@drawable/img_footer_logo"-->
+    <!--    android:visibility="visible" />-->
+
+    <!--</RelativeLayout>-->

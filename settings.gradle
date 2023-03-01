@@ -1,0 +1,2 @@
+include ':browser'
+include ':app' ,':crashreporter'

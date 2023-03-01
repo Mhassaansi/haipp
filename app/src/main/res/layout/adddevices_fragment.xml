@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data class="AdddevicesChild"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:keepScreenOn="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"
+            tools:itemCount="20"
+            tools:listitem="@layout/item_kids" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+        <com.google.android.material.button.MaterialButton
+            style="@style/preloginButton"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Add devices"
+            android:id="@+id/adddevices"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:theme="@style/FormButtonlogin"
+            app:cornerRadius="@dimen/_8sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

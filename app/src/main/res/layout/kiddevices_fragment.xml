@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="Kiddevices"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <com.biao.pulltorefresh.PtrLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeatures"
+            android:layout_marginTop="@dimen/_4sdp"
+            tools:listitem="@layout/item_kids"
+            android:layoutAnimation="@anim/layout_animation_fall_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </com.biao.pulltorefresh.PtrLayout>
+
+    </LinearLayout>
+
+</layout>

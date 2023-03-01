@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "695072170937",
+    "firebase_url": "https://demotestapp-8623a-default-rtdb.firebaseio.com",
+    "project_id": "demotestapp-8623a",
+    "storage_bucket": "demotestapp-8623a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695072170937:android:885e901865790ec9bb4c68",
+        "android_client_info": {
+          "package_name": "com.appsnado.lock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695072170937-rdl0s3eq1rrdv3v3i7klbmrtbj83bu0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD15qcw98c8lwx1-EmRBlpQ_OlboY4Mjwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695072170937-rdl0s3eq1rrdv3v3i7klbmrtbj83bu0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

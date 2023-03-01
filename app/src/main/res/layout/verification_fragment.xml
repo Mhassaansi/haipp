@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="VerifyBinding" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background02" />
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/loginlogo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_id"
+                style="@style/Textlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="center"
+                android:text="@string/Harnessthepowerofdatatransformthemindandreenvisionsociety" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="center"
+                android:text="@string/verifyloginupdate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.poovam.pinedittextfield.SquarePinField
+                android:id="@+id/etPinText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:inputType="number"
+                android:textSize="@dimen/_16sdp"
+                app:cornerRadius="@dimen/_8sdp"
+                app:fieldBgColor="@color/white"
+                app:fieldColor="@color/white"
+                app:highlightColor="@color/white"
+                app:noOfFields="5" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <FrameLayout
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:src="@drawable/counter">
+
+                    </ImageView>
+                </FrameLayout>
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    app:cpb_background_progressbar_width="@dimen/_2sdp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progress_max="60"
+                    app:cpb_progressbar_color="@color/yellowcolorapp"
+                    app:cpb_progressbar_width="@dimen/_2sdp"
+                    app:cpb_round_border="false" />
+
+                <TextView
+                    android:id="@+id/tvTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Resend"
+                android:id="@+id/resend"
+                style="@style/Textlogin"
+                android:visibility="gone"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" />
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="@dimen/_120sdp"-->
+            <!--                android:layout_marginTop="@dimen/_10sdp"-->
+            <!--                android:background="@drawable/counter"-->
+            <!--                android:layout_height="@dimen/_130sdp">-->
+            <!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+            <!--                    android:id="@+id/circularProgressBar"-->
+            <!--                    android:layout_width="@dimen/_100sdp"-->
+            <!--                    android:layout_height="@dimen/_80sdp"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:layout_marginTop="@dimen/_33sdp"-->
+            <!--                    app:cpb_background_progressbar_color="#00000000"-->
+            <!--                    app:cpb_background_progressbar_width="@dimen/_2sdp"-->
+            <!--                    app:cpb_progress_direction="to_right"-->
+            <!--                    app:cpb_progress_max="60"-->
+            <!--                    app:cpb_progressbar_color="@color/teal_200"-->
+            <!--                    app:cpb_progressbar_width="@dimen/_2sdp"-->
+            <!--                    app:cpb_round_border="false" />-->
+
+            <!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="@dimen/_120sdp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="@dimen/_130sdp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:background="@drawable/counter"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:gravity="center">&ndash;&gt;-->
+
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/tvTimer"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_centerInParent="true"-->
+            <!--                        android:text="123"-->
+            <!--                        android:textColor="@color/white"-->
+            <!--                        android:textSize="@dimen/_14sdp" />-->
+            <!--&lt;!&ndash;                  </LinearLayout>&ndash;&gt;-->
+
+
+            <!--            </RelativeLayout>-->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

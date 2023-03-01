@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="WorksheetDialog" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/_6sdp">
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/colorGreen"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="@string/worksheet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/white"
+
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_4sdp">
+
+                <!--                <com.appsnado.haippNew.custom_views.SpinnerPlus-->
+                <!--                    android:id="@+id/grade"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:focusable="false"-->
+                <!--                    style="@style/spinner"-->
+                <!--                    android:visibility="gone" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@null"
+                    android:id="@+id/txtgrade"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:hint="Grade"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.appsnado.haippNew.custom_views.SpinnerPlus
+                    android:id="@+id/grade"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    style="@style/spinner"
+                    android:visibility="invisible" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:drawableEnd="@drawable/dropdown"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_4sdp">
+                <!--                <com.appsnado.haippNew.custom_views.SpinnerPlus-->
+                <!--                    android:id="@+id/subject"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:focusable="false"-->
+                <!--                    style="@style/spinner"-->
+                <!--                    android:visibility="gone" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@null"
+                    android:id="@+id/sub"
+                    android:drawableEnd="@drawable/dropdown"
+                    android:hint="Subject"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.appsnado.haippNew.custom_views.SpinnerPlus
+                    android:id="@+id/subject"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    style="@style/spinner"
+                    android:visibility="invisible" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:background="@color/yellowcolorapp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

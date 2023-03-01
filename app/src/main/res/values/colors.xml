@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_80">#ccffffff</color>
+    <color name="white_90">#e6ffffff</color>
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="white_30">#4Dffffff</color>
+    <color name="tr_black10">#1a000000</color>
+    <color name="tr_black50">#80000000</color>
+    <color name="line_color">#eaeaea</color>
+    <color name="font_deep_gray">#5b5b5b</color>
+    <color name="font_light_gray">#b7b7b7</color>
+    <color name="bg_blue_normal">#2c9ffe</color>
+    <color name="bg_blue_normal_50">#7f2c9ffe</color>
+    <color name="bg_blue_selected">#2994ec</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_white_normal">#ffffff</color>
+    <color name="bg_white_selected">#f3f3f3</color>
+
+    new///
+
+
+    <color name="black">#ff000000</color>
+    <color name="gray_dark">#222222</color>
+    <color name="gray_medium">#cdcdcd</color>
+
+    <color name="gray_list_bg">#0d000000</color>
+
+    <color name="primary_color">#E0E0E0</color>
+    <color name="secondary_color">#66000000</color>
+    <color name="accent_color">#0073EF</color>
+
+    <color name="purple_200">#000</color>
+
+    <color name="drawer_background">#ffffff</color>
+    <color name="drawer_background_dark">#424242</color>
+
+    <color name="secondary_color_settings">#9C9C9C</color>
+    <color name="secondary_color_settings_dark">#2E2E2E</color>
+
+    <color name="hint_text_light_theme">#80000000</color>
+    <color name="hint_text_dark_theme">#80ffffff</color>
+
+    <color name="primary_color_dark">#424242</color>
+
+    <color name="divider_dark">#1FFFFFFF</color>
+    <color name="divider_light">#1F000000</color>
+
+    <color name="selected_dark">#0FFFFFFF</color>
+    <color name="selected_light">#0F000000</color>
+
+
+
+    <color name="icon_light_theme">#8A000000</color>
+    <color name="icon_dark_theme">#FFFFFFFF</color>
+    <color name="icon_light_theme_disabled">#40000000</color>
+    <color name="icon_dark_theme_disabled">#8AFFFFFF</color>
+
+    <color name="error_red">#F44336</color>
+
+    <color name="bookmark_default_blue">#2196F3</color>
+    <color name="bookmark_default_green">#4CAF50</color>
+    <color name="bookmark_default_red">#EF5350</color>
+    <color name="bookmark_default_orange">#FF9800</color>
+
+    <color name="ssl_secured">#4CAF50</color>
+    <color name="ssl_unsecured">#F44336</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="yellowcolorapp">#FCB03C</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="colorDarkGray">#959595</color>
+    <color name="colorRed_bar">#AA0000</color>
+    <color name="coloraccent">#006C75</color>
+    <color name="background">#f0f0f0</color>
+    <color name="separator">#DFDADA</color>
+    <color name="colortitlebarbg">#106a75</color>
+    <color name="textviewcolor">#1E1E1E</color>
+    <color name="greencolorbtn">#006C75</color>
+    <color name="backgroundoffcolor">#f0f0f0</color>
+
+    <color name="ligthcolorgray">#acacac</color>
+    <color name="chat">#e2e2e2</color>
+
+    <color name="colorGreen">#058586</color>
+    <color name="textcolor">#313131</color>
+    <color name="color_transparent">#00000000</color>
+
+    //
+
+    <color name="lobbyHangup">#CC2B33</color>
+
+
+</resources>

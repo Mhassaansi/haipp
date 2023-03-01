@@ -1,0 +1,317 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'android.extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.getkeepsafe.dexcount'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply plugin: 'jacoco'
+apply plugin: 'com.github.ben-manes.versions'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.appsnado.haippNew"
+        minSdkVersion 21
+        targetSdkVersion 32
+        multiDexEnabled true
+        versionCode 8
+        versionName "1.1"
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+//    buildFeatures {
+//        viewBinding true
+//        dataBinding true
+//    }
+
+    buildTypes {
+        release {
+            multiDexEnabled true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    androidExtensions {
+        experimental = true
+    }
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        resources {
+            excludes += ['.readme']
+        }
+    }
+    lint {
+        abortOnError false
+    }
+
+}
+
+        jacoco {
+            toolVersion = '0.7.9'
+            // See http://www.eclemma.org/jacoco/
+        }
+
+dexcount {
+
+    includeClasses = false
+    includeFieldCount = false
+//    format = "tree"
+    orderByMethodCount = true
+    verbose = false
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+
+    implementation 'org.litepal.android:core:1.4.1'
+
+    implementation project(path: ':crashreporter')
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    implementation 'androidx.core:core-ktx:1.9.0-alpha03'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+
+    ///dimension
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    implementation 'com.github.Ilhasoft:data-binding-validator:2.0.0'
+
+
+//    implementation 'com.google.firebase:firebase-database:19.7.0'
+//    implementation 'com.google.firebase:firebase-functions:19.2.0'
+
+//    implementation 'com.google.firebase:firebase-auth:20.0.3'
+//    implementation 'com.google.firebase:firebase-storage-ktx:19.2.1'
+
+//    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+//    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+//    implementation 'com.google.firebase:firebase-core:18.0.2'
+
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    //circular Imageview
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    //Pin entry
+    implementation 'com.poovam:pin-edittext-field:1.2.3'
+    implementation 'com.biao:pulltorefresh:1.0.0-beta3'
+
+
+
+    //Rounded Progressbar
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-functions:20.1.0'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.4'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
+
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.4'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.1.2'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.4.1'
+
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+
+
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    //Automcomplete API for places
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+
+    debugImplementation 'androidx.multidex:multidex:2.0.1'
+
+    // test dependencies
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.assertj:assertj-core:3.17.2'
+    testImplementation 'org.mockito:mockito-core:3.5.10'
+    testImplementation 'com.nhaarman:mockito-kotlin:1.6.0', {
+        exclude group: 'org.jetbrains.kotlin'
+    }
+    testImplementation 'org.robolectric:robolectric:4.4'
+
+    // support libraries
+    implementation "androidx.palette:palette:1.0.0"
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation "androidx.vectordrawable:vectordrawable-animated:1.1.0"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.fragment:fragment:1.4.1'
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+
+    // html parsing for reading mode
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+    // file reading
+    final def mezzanineVersion = '1.1.1'
+    implementation "com.anthonycr.mezzanine:mezzanine:$mezzanineVersion"
+    kapt "com.anthonycr.mezzanine:mezzanine-compiler:$mezzanineVersion"
+
+    // dependency injection
+    final def daggerVersion = '2.40.5'
+    implementation "com.google.dagger:dagger:$daggerVersion"
+
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+//    compileOnly 'javax.annotation:jsr250-api:1.0'
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+
+    // view binding
+    final def butterKnifeVersion = '10.2.1'
+    implementation "com.jakewharton:butterknife:$butterKnifeVersion"
+    kapt "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+
+    // permissions
+    implementation 'com.anthonycr.grant:permissions:1.1.2'
+
+    implementation( 'com.github.thekhaeng:pushdown-anim-click:1.1.1' ){
+        exclude group: 'com.android.support'
+    }
+
+    // proxy support
+    implementation 'net.i2p.android:client:0.9.45'
+    implementation 'net.i2p.android:helper:0.9.5'
+
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.3'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+
+    // implementation 'com.squareup.okhttp3:logging-interceptor:4.3.0'
+
+
+///    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+//    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    // intercepter
+ //   implementation 'com.squareup.okhttp3:logging-interceptor:4.3.0'
+
+
+    implementation 'com.github.DavidProdinger:weekdays-selector:1.1.1'
+    // rx
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.4.0'
+
+
+    //datepicker
+    implementation 'com.github.florent37:singledateandtimepicker:2.2.7'
+
+    // tor proxy
+    final def netCipherVersion = '2.0.0-alpha1'
+    implementation "info.guardianproject.netcipher:netcipher:$netCipherVersion"
+    implementation "info.guardianproject.netcipher:netcipher-webkit:$netCipherVersion"
+
+    implementation 'com.anthonycr.progress:animated-progress:1.0'
+
+    // memory leak analysis
+    final def leakCanaryVersion = '1.6.3'
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanaryVersion"
+
+
+    implementation 'id.zelory:compressor:2.1.0'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+
+
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+
+}
+
+
+kapt {
+    arguments {
+        arg("mezzanine.projectPath", project.rootDir)
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        kotlinOptions {
+            freeCompilerArgs += ['-XXLanguage:+InlineClasses']
+            freeCompilerArgs += ['-progressive']
+        }
+    }
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testLightningPlusDebugUnitTest', 'createLightningPlusDebugCoverageReport']) {
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    executionData fileTree(dir: "$buildDir", includes: [
+            "jacoco/testLightningPlusDebugUnitTest.exec",
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+}

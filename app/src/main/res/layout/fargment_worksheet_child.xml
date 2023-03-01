@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data class="WorksheetChild" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_5sdp"
+            tools:itemCount="20"
+            tools:listitem="@layout/item_worklist_child" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/preloginButton"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Assign"
+            android:id="@+id/assign"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:theme="@style/FormButtonlogin"
+            app:cornerRadius="@dimen/_8sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/preloginButton"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:theme="@style/FormButtonlogin"
+            app:cornerRadius="@dimen/_8sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
